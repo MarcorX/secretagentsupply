@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link url="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link url="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Secret Agent Supply Inc.</title>
   </head>
   <body>
     <!-- Main Header -->
     <header>
-      <div class="logo">
+      <div class="flex-container">
         <img src="./resources/images/logo.png" alt="">
         <span>
           SECRET AGENT SUPPLY INC.
@@ -17,95 +17,105 @@
       </div>
     </header>
     <!-- Main Section -->
-    <div class="container">
+    <div>
       <!-- Banner -->
       <div class="banner">
-        <div class="banner-text">
-          <h4>
-            New Arrival
-          </h4>
-          <h1>
-            SPORT BIKES AND MOTORCYCLES
-          </h1>
+        <div class="container">
+          <div class="headline">
+            <h4>
+              New Arrival
+            </h4>
+            <h1>
+              SPORT BIKES AND MOTORCYCLES
+            </h1>
+          </div>
         </div>
+      </div>
+      <!-- Navigation Menu -->
+      <div class="navigation-menu">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href ="#">
+                Eyewear
+              </a></li>
+              <li><a href ="#">
+                Apparel
+              </a></li>
+              <li><a href ="#">
+                Gadgets
+              </a></li>
+              <li><a href ="#">
+                Vehicles
+              </a></li>
+              <li><a href ="#">
+                Classes
+              </a></li>
+              <li><a href ="#">
+                Contact
+              </a></li>
+            </ul>
+          <nav>
+        </div>
+      </div>
+      <!-- Products Section -->
+      <section class="container products">
+        <div class="flex-container">
+          <div class="product-box">
+            <div class="product-image">
+              <img src="./resources/images/pen.png" alt="">
+            </div>
+            <p class="product-description">
+              Exploding Pen
+            </P>
+          </div>
+          <div class="product-box">
+            <div class="product-image">
+              <img src="./resources/images/watch.png">
+            </div>
+            <p class="product-description">
+              Cellular Watch
+            </P>
+          </div>
+          <div class="product-box">
+            <div class="product-image">
+              <img src="./resources/images/glasses.png">
+            </div>
+            <p class="product-description">
+              Thermal Glasses
+            </P>
+          </div>
+        </div>
+      </section>
+      <!-- Info Section -->
+      <div class="container info">
+        <section class="flex-container">
+          <div class="location">
+            <p class="title">
+              Location
+            </p>
+            <p>
+              -47.346436, 84.32354
+            </p>
+          </div>
+          <div class="hours">
+            <p class="title">
+              Hours
+            </p>
+            <p>
+              0800 - 1800
+            </p>
+          </div>
+        </section>
       </div>
     </div>
-    <!-- Navigation Menu -->
-    <nav>
-      <ul>
-        <li><a href ="#">
-          Eyewear
-        </a></li>
-        <li><a href ="#">
-          Apparel
-        </a></li>
-        <li><a href ="#">
-          Gadgets
-        </a></li>
-        <li><a href ="#">
-          Vehicles
-        </a></li>
-        <li><a href ="#">
-          Classes
-        </a></li>
-        <li><a href ="#">
-          Contact
-        </a></li>
-      </ul>
-    <nav>
-    <!-- Products Section -->
-    <section class="products">
-      <div class="flex-container">
-        <div clas="pen">
-          <div class="product-image">
-            <img src="./resources/images/pen.png" alt="">
-          </div>
-          <p class="product-description">
-            Exploding Pen
-          </P>
-        </div>
-        <div clas="watch">
-          <div class="product-image">
-            <img src="./resources/images/watch.png">
-          </div>
-          <p class="product-description">
-            Cellular Watch
-          </P>
-        </div>
-        <div clas="glasses">
-          <div class="product-image">
-            <img src="./resources/images/glasses.png">
-          </div>
-          <p class="product-description">
-            Thermal Glasses
-          </P>
-        </div>
-      </div>
-    </section>
-    <!-- Info Section -->
-    <section class="info">
-      <div class="location">
-        <p>
-          Location
-        </p>
-        <p>
-          -47.346436, 84.32354
-        </p>
-      </div>
-      <div class="hours">
-        <p>
-          Hours
-        </p>
-        <p>
-          0800 - 1800
-        </p>
-      </div>
-    </section>
     <!-- Footer -->
     <footer>
-      <p>
-        Copyright Secret Agent Supply Inc.
-      </p>
+      <div class="container footer">
+        <p>
+          Copyright Secret Agent Supply Inc.
+        </p>
+      </div>
     </footer>
 
   </body>
