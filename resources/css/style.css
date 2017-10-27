@@ -90,10 +90,14 @@ header .flex-container span {
 }
 
 
-nav ul {
+nav ul.desktop {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.navigation-menu ul.mobile-devices {
+  display: none;
 }
 
 a {
@@ -175,4 +179,119 @@ footer {
 .container.footer p {
   width: 960px;
   text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation-menu ul.desktop{
+    display: none;
+  }
+  .navigation-menu ul.mobile-devices {
+    display: block;
+    text-align: center;
+  }
+
+  .product-box {
+    width: 47%;
+  }
+
+  .product-box.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    display: block;
+    background-image: url("../images/moto.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15em;
+    margin-top: 0;
+
+  }
+
+  .banner .container {
+
+  }
+
+  .banner .container .headline {
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 10rem;
+
+  }
+
+  .banner .container .headline h4 {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.25rem;
+
+  }
+
+  .banner .container .headline h1 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+
+  }
+
+
+  .container.products .flex-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .product-box {
+    width: 90%;
+  }
+
+  .product-box.watch {
+    display: none;
+  }
+
+  .container.info {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+  }
+
+  .container.info .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container.info .flex-container .location {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .container.info .flex-container .hours {
+    width: 90%;
+  }
+
+
+  footer {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: black;
+    color: white;
+
+  }
+
+  .container.footer p {
+    width: 100%;
+    text-align: center;
+  }
 }
